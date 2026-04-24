@@ -1,0 +1,29 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-10-27T10:30:00Z",
+  "version": "1.2.3",
+  "uptime_seconds": 3600,
+  "data": {
+    "cpu_usage": 0.15,
+    "memory_usage": 0.60,
+    "disk_space_available": "20GB",
+    "active_users": 125
+  },
+  "dependencies": {
+    "database": "online",
+    "cache": "online",
+    "message_queue": "healthy"
+  },
+  "checks": [
+    {
+      "name": "database_connection",
+      "status": "ok",
+      "details": "Successfully connected to database."
+    },
+    {
+      "name": "api_endpoint",
+      "status": "ok",
+      "details": "API endpoint is responding."
+    }
+  ]
+}
